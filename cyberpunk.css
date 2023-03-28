@@ -1,0 +1,211 @@
+/* Set default styles for all screen sizes */
+/* Mobile first styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: black;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+nav .menu-icon {
+  display: block;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #4A4A4A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5em;
+    z-index: 1000;
+  }
+  
+  nav a {
+    margin-left: 1.5em;
+    font-size: 1.1em;
+  }
+
+  nav .menu-icon {
+    display: none;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Define color palette for the page */
+:root {
+  --primary-color: #2f2f2f;
+  --secondary-color: #333333;
+  --tertiary-color: #cccccc;
+  --background-color: #ffffff;
+}
+
+/* Define font sizes for headings */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Define line height for paragraphs */
+p {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Define max width for page content */
+.container {
+  max-width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Define styles for the header */
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: var(--background-color);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+/* Define styles for main content sections */
+section {
+  margin: 2rem 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.project {
+  margin-bottom: 2rem;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Define styles for footer */
+footer {
+background-color: var(--secondary-color);
+color: var(--tertiary-color);
+padding: 1rem;
+text-align: center;
+}
+
+footer p {
+margin-bottom: 0.5rem;
+}
+
+footer a {
+color: var(--tertiary-color);
+}
+
+/* Define responsive styles /
+@media only screen and (min-width: 768px) {
+/ Make the header full width, center align the text and make the nav inline */
+header {
+text-align: center;
+}
+
+nav {
+display: inline-block;
+}
+
+nav a {
+display: inline-block;
+margin: 0 1rem;
+}
+
+/* Define max width for page content */
+.container {
+max-width: 80%;
+padding: 2rem;
+}
+
+/* Make images in project section align next to project details */
+.project {
+display: flex;
+align-items: center;
+}
+
+.project__details {
+width: 60%;
+margin-left: 1rem;
+font-size: 1.1rem;
+}
+
+.project__details h3 {
+font-size: 2rem;
+}
+
+.project__details p {
+margin-bottom: 0.5rem;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+/* Define max width for page content */
+.container {
+max-width: 1024px;
+padding: 2rem;
+margin: 0 auto;
+}
+}

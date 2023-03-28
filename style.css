@@ -1,0 +1,91 @@
+/* Styles for the nav and header section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 3rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+/* Styles for the about section */
+.about {
+  background-color: #f2f2f2;
+  padding: 3rem;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+/* Styles for the project section */
+.project {
+  padding: 40px;
+  background-color: #f2f2f2;
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the contact section */
+#contact {
+  background-color: #f2f2f2;
+  padding: 3rem;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
